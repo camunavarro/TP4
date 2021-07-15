@@ -8,19 +8,34 @@ while cantidad > x:
     print (palabra)
     x += 1
 
-print ("Fin.")
 ---------------------------------------------------------------------------------------------
 
 2) Escribir un programa que pregunte al usuario su edad y muestre por pantalla todos los años
 que ha cumplido (desde 1 hasta su edad).
 
+edad = int(input("¿Cuantos anios tiene?: "))
+
+for numero in range(edad):
+    print(f"{numero+1}")
+
 ---------------------------------------------------------------------------------------------
 3) Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla
 todos los números impares desde 1 hasta ese número separados por comas.
 
+entero = int(input("Ingrese un numero entero positivo: "))
+
+for numero in range(1, entero + 1):
+    if numero % 2 != 0:
+        print(numero, end=", ")
+
 ---------------------------------------------------------------------------------------------
 4) Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla
 la cuenta atrás desde ese número hasta cero separados por comas.
+
+entero = int(input("Ingrese un numero entero positivo: "))
+
+for numero in range(1,entero+1):
+    print(entero-numero+1)
 
 ---------------------------------------------------------------------------------------------
 5) Escribir un programa que pregunte al usuario una cantidad a invertir, el interés anual y el
@@ -61,6 +76,13 @@ triángulo rectángulo como el de más abajo.
 5 3 1
 7 5 3 1
 9 7 5 3 1
+
+producto = 2
+for numero in range (1,10 +1):
+    print (f"{producto} x {numero} = {producto * numero}")
+    producto *= numero
+
+  VER!! VER!! VER!!
 
 ---------------------------------------------------------------------------------------------
 9) Escribir un programa que almacene la cadena de caracteres contraseña en una variable,
