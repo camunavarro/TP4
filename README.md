@@ -68,6 +68,13 @@ número, ej: (n = 6)
 ….
 10x6 = 60
 
+producto = 2
+for numero in range (1,10 +1):
+    print (f"{producto} x {numero} = {producto * numero}")
+    producto *= numero
+
+  VER!! VER!! VER!!
+
 ---------------------------------------------------------------------------------------------
 8) Escribir un programa que pida al usuario un número entero y muestre por pantalla un
 triángulo rectángulo como el de más abajo.
@@ -77,12 +84,7 @@ triángulo rectángulo como el de más abajo.
 7 5 3 1
 9 7 5 3 1
 
-producto = 2
-for numero in range (1,10 +1):
-    print (f"{producto} x {numero} = {producto * numero}")
-    producto *= numero
 
-  VER!! VER!! VER!!
 
 ---------------------------------------------------------------------------------------------
 9) Escribir un programa que almacene la cadena de caracteres contraseña en una variable,
