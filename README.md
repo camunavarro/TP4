@@ -57,8 +57,6 @@ while x <= 5:
     print ("#" * x)
     x = x + 1
 
-print ("Fin.")
-
 ---------------------------------------------------------------------------------------------
 7) Escribir un programa que pida un número entero y muestra la tabla de multiplicar de ese
 número, ej: (n = 6)
@@ -73,8 +71,6 @@ for numero in range (1,10 +1):
     print (f"{producto} x {numero} = {producto * numero}")
     producto *= numero
 
-  VER!! VER!! VER!!
-
 ---------------------------------------------------------------------------------------------
 8) Escribir un programa que pida al usuario un número entero y muestre por pantalla un
 triángulo rectángulo como el de más abajo.
@@ -85,10 +81,24 @@ triángulo rectángulo como el de más abajo.
 9 7 5 3 1
 
 
-
 ---------------------------------------------------------------------------------------------
 9) Escribir un programa que almacene la cadena de caracteres contraseña en una variable,
 pregunte al usuario por la contraseña hasta que introduzca la contraseña correcta.
+
+clave = "contrasena"
+max_intentos = 3
+contador = 0
+x = ""
+
+while clave != x:
+    contador += 1
+    if contador > max_intentos:
+        print("Es incorrecto.")
+        break
+    x = input (f"Ingrese su clave{contador}: ")
+
+else:
+    print ("Es correcto.")
 
 ---------------------------------------------------------------------------------------------
 10) Escribir un programa que pida al usuario un número entero y muestre por pantalla si es un
@@ -97,6 +107,11 @@ número primo o no.
 ---------------------------------------------------------------------------------------------
 11) Escribir un programa que pida al usuario una palabra y luego muestre por pantalla una a
 una las letras de la palabra introducida empezando por la última.
+
+cadena = input("Ingrese una palabra: ")
+
+for letra in reversed(cadena):
+    print (letra)
 
 ---------------------------------------------------------------------------------------------
 12) Escribir un programa en el que se pregunte al usuario por una frase y una letra, y muestre
